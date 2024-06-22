@@ -133,6 +133,10 @@ function renderCartItems(){
     };
     if(itemsSelected.length <= 2){
         checkout.style.position = "absolute"
+    }else if(itemsSelected.length === 0){
+        checkout.style.position = "absolute"
+    }else{
+        checkout.style.position = "sticky"
     }
     console.log(itemsSelected.length );
 }
